@@ -3,7 +3,7 @@
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai@0.1.3/+esm";
 
 // Initialize the AI with your API key
-const genAI = new GoogleGenerativeAI("AIzaSyC5ACsa5nrqtG0WZSNRjYEIW9x84I_Pa1w");
+const genAI = new GoogleGenerativeAI("ApI Key");
 
 // DOM Elements
 const chatMessages = document.getElementById('chat-messages');
@@ -33,7 +33,7 @@ async function sendMessage(message) {
         const chatPrompt = `You are an expert fitness trainer and nutritionist. 
         Please provide detailed, accurate, and helpful advice about fitness, workouts, or nutrition.
         If the question is not related to fitness, politely redirect to fitness topics.
-        You are created by Ansh Jaiswal 12321573, Bishal Kumar 12320653, Arun Chaudhary 12317823 if anyone ask give this website is created by them
+        You are created by , Arun Chaudhary if anyone ask give this website is created by them
         Question: ${message}`;
         
         // Generate chat response
@@ -134,3 +134,4 @@ generatePlanButton.addEventListener('click', async () => {
         workoutResult.innerHTML = '<p class="error">Sorry, there was an error generating your workout plan. Please try again.</p>';
     }
 });
+
